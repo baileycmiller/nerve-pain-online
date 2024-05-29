@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .item {
+                border: 1px solid black;
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .selected {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item selected" onclick="changeSpecialty.call(this)">Primary Care</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Cardiology</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Hematology</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Gynecology</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Chiropractic</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Orthopedic</div>
+            <div class="item" onclick="changeSpecialty.call(this)">ENT</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Gastroenterology</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Neurology</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Physical Therapy</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Speech Therapy</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Urology</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Ophthalmology</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Functional Medicine</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Sleep Medicine</div>
+            <div class="item" onclick="changeSpecialty.call(this)">Neurosurgery</div>
+        </div>
+
+        <script>
+            // variables to store average visit times across specialties
+            const primaryCare = 17.4;
+            const cardiology = 17.4;
+            const hematology = 17.4;
+            const gynecology = 17.4;
+            const chiropractic = 17.4;
+            const orthopedic = 17.4;
+            const ent = 17.4;
+            const gastroenterology = 17.4;
+            const neurology = 17.4;
+            const physicalTherapy = 17.4;
+            const speechTherapy = 17.4;
+            const urology = 17.4;
+            const ophthalmology = 17.4;
+            const functionalMedicine = 17.4;
+            const sleepMedicine = 17.4;
+            const neurosurgery = 17.4;
+
+            function changeSpecialty() {
+                console.log("changed");
+                $(".selected").removeClass('selected');
+                $(this).addClass('selected');
+            }
+        </script>
+    </body>
+</html>
+
+<script src="js/index.js"></script>
