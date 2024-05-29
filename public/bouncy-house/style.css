@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+canvas {
+  display: block;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+main {
+  margin: 30px auto;
+}
+
+canvas {
+  text-align: center;
+}
+
+img {
+  margin: 0 auto;
+}
